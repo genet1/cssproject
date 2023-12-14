@@ -1,3 +1,16 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.header {
+  background-image: url('../image/enjera.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100%;
+}
+
 .container
  {
     max-width: 840px;
@@ -13,3 +26,34 @@ display: grid;
 grid-template-columns: 50% 50% ;
 
 }
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+}
+.navbar {
+  background:#6ab446;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.header {
+   background-image: url('../image/enjera.jpg');
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   height: 100%;
+}
+
