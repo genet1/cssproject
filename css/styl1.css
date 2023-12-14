@@ -1,0 +1,15 @@
+.container
+ {
+    max-width: 840px;
+    margin: 0 auto;
+    background-color: rgb(131, 131, 163);
+}
+.intro {
+
+  text-align: center;  
+}
+.about-grid {
+display: grid;
+grid-template-columns: 50% 50% ;
+
+}

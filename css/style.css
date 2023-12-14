@@ -1,0 +1,17 @@
+.container {
+max-width: 840;
+margin: auto;
+
+}
+.intro {
+    text-align: center;
+    font-size: 4em;
+}
+.gridexample {
+display:grid;
+grid-template-rows: auto auto;
+grid-template-columns: auto auto auto;
+
+
+
+}
