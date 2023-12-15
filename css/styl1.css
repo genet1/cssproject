@@ -16,16 +16,37 @@ html, body {
     max-width: 840px;
     margin: 0 auto;
     background-color: rgb(131, 131, 163);
-}
-.intro {
+    .intro {
 
-  text-align: center;  
+      text-align: center;  
+    }
+    .about-grid {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    
+    }
 }
-.about-grid {
+.grid-table {
+
 display: grid;
-grid-template-columns: 50% 50% ;
+grid-template-rows: auto auto;
+grid-template-columns: auto auto auto;
 
 }
+
+@media (max-width:480px) {
+  .about-grid {
+grid-template-columns: 100%;
+  }
+}
+@media (min-width :900px)
+{
+  .grid{
+
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 
 body {
   padding: 0;
@@ -57,3 +78,112 @@ body {
    height: 100%;
 }
 
+.projects-heading {
+text-align: center;
+h3
+}
+
+.project-grid {
+display: grid;
+grid-template-columns: 50% 50%;
+
+}
+.project-image {
+justify-self: center;
+padding: 4%;
+}
+
+@media (max-width:650){
+.project-grid {
+  grid-template-columns: 100%;
+}
+}
+.links-and-contact {
+  display: grid;
+  grid-template-columns: 30% 70%
+
+}
+.links 
+{
+  justify-self: center;
+
+}
+.links-list {
+
+  list-style: none;
+  padding: 0%;
+}
+@media (max-width:650px) {
+  .links-and-contact{
+    grid-template-columns: 100%;
+  }
+}
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.intro {
+  font-family: 'Courier New', Courier, monospace;
+ color: rgb(130, 26, 228);
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+  
+  .intro h1 {
+    color: #b4464c;
+  }
+  .description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  
+}
+.projects-heading h3{
+  text-align: center;}
+.description {
+
+  description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+  }
+  .description h1 {
+    color: #6ab446;
+  }
+  .description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+  }
+  .description h1 {
+    color: #6ab446;
+  }
+  .description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  .description button {
+    border:1px solid #6ab446;
+    background:#6ab446;
+    border-radius: 0;
+    color:#fff;
+}
+.description button:hover {
+	border:1px solid #fff;
+    background:#fff;
+    color:#000;
+}
+  
+}
